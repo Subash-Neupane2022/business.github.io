@@ -1,0 +1,355 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+:root {
+  --maincolor: #480ca8;
+  --secondarycolor: #6930c3;
+  --thirdcolor: #7209b7;
+  --textcolor: #fff;
+}
+html {
+  scroll-behavior: smooth;
+}
+header {
+  background: #e1e1ff;
+  box-shadow: 20px 20px 60px #bfbfd9, -20px -20px 60px #ffffff;
+  -webkit-box-shadow: 20px 20px 60px #bfbfd9, -20px -20px 60px #ffffff;
+}
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+  padding: 0.6rem;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+.navbar {
+  width: 60%;
+}
+.navlink {
+  list-style: none;
+}
+.nav_text {
+  text-decoration: none;
+  color: rgb(221, 194, 194);
+  text-transform: capitalize;
+  transition: 0.5s linear;
+}
+.navlink:first-child .nav_text {
+  color: var(--maincolor);
+}
+.nav_text:hover {
+  color: var(--maincolor);
+}
+.logo-text {
+  margin-left: 0.6rem;
+}
+.img img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+.nav_item {
+  display: flex;
+  justify-content: space-between;
+}
+.header-icon-img {
+  display: flex;
+}
+.logo-side {
+  width: 20px;
+  height: 20px;
+  margin: 0px 0.6rem;
+}
+
+/* Service */
+#service-container {
+  text-align: center;
+}
+.service-text {
+  display: flex;
+  width: 50%;
+  margin: 3rem auto;
+  text-align: left;
+}
+.service-information {
+  margin-left: 2rem;
+}
+.service-h4 {
+  position: relative;
+  letter-spacing: 2px;
+}
+.service-h4::after {
+  content: "";
+  position: absolute;
+  background-color: var(--maincolor);
+  width: 20%;
+  height: 3px;
+  top: 100%;
+  left: 0;
+}
+.service-tab {
+  background: var(--maincolor);
+  color: honeydew;
+  padding: 2rem;
+}
+.service-tab-heading {
+  width: 60%;
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+}
+.service-tab-heading p {
+  font-size: 1rem;
+  padding: 8px 2.3rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.8s linear;
+}
+.service-tab-heading p:first-child {
+  background-color: var(--secondarycolor);
+}
+.service-tab-heading p:hover {
+  background-color: rgb(20, 3, 36);
+}
+
+#services-details {
+  margin: 2rem auto;
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2rem 1rem;
+}
+.service-image {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.service-image-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container {
+  position: relative;
+  border-radius: 4px;
+}
+.first,
+.second {
+  height: 300px;
+}
+.second {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.image-text {
+  position: absolute;
+
+  left: 0%;
+  top: 60%;
+  padding: 8px;
+}
+
+.btn-img-text {
+  width: 130px;
+  background-color: transparent;
+  border: 2px solid #fff;
+  outline: none;
+  border-radius: 10px;
+  padding: 8px 10px;
+}
+.btn-inf {
+  background-color: var(--thirdcolor);
+
+  border: 2px solid #fff;
+  outline: none;
+  border-radius: 10px;
+  padding: 8px 10px;
+}
+.second p {
+  margin: 0.8rem 0;
+  font-size: 0.9rem;
+  color: #fff;
+}
+.additional-information {
+  background-color: var(--maincolor);
+}
+
+.first img {
+  border-radius: 10px;
+}
+.container-information {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 3rem;
+}
+li {
+  list-style: none;
+}
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+.company-heading {
+  color: gray;
+  margin-bottom: 0.6rem;
+}
+li {
+  color: lightgrey;
+  cursor: pointer;
+}
+li:hover {
+  color: var(--thirdcolor);
+}
+img {
+  object-fit: cover;
+}
+#recentwork {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 80%;
+  margin: 1.5rem auto;
+  grid-gap: 0.8rem 0.8rem;
+}
+#body-container {
+  background-image: url("service3.jpg");
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+  height: calc(100vh - 10px);
+
+  background-size: cover;
+}
+.logo1 {
+  display: none;
+}
+.hamburger-menu {
+  display: none;
+}
+/* Responsive Website */
+
+@media (max-width: 600px) {
+  body {
+    /* background-color: greenyellow; */
+  }
+  .hamburger-menu {
+    display: block;
+  }
+  .logo1 {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    display: block;
+  }
+  #navbar {
+    width: 100%;
+  }
+  .navbar {
+    background-color: indigo;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 0%;
+    height: 100vh;
+    z-index: 1;
+    overflow: hidden;
+    transition: all 0.4s linear;
+  }
+  .nav_item {
+    display: flex;
+
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .navlink {
+    margin: 0.5rem 0rem;
+    text-align: center;
+  }
+  /* Working on navbar */
+
+  #body-container {
+    /* display: none; */
+  }
+  #recentwork {
+    grid-template-columns: 1fr;
+    width: 90%;
+    margin: 1.5rem auto;
+    grid-gap: 0.8rem 0.8rem;
+  }
+
+  #services-details {
+    margin: 2rem auto;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem 1rem;
+  }
+  .footer-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 0.6rem;
+  }
+  .container-information {
+    display: flex;
+    width: 100%;
+
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    flex-direction: column;
+  }
+  .text-inf {
+    margin: 1.2rem 0rem;
+  }
+  .service-tab-heading {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .service-tab-heading p {
+    font-size: 1rem;
+    padding: 8px 1rem;
+
+    cursor: pointer;
+    transition: all 0.8s linear;
+  }
+
+  .service-heading {
+    text-align: center;
+  }
+  .service-text {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin: 3rem auto;
+    align-items: center;
+    text-align: left;
+  }
+  .service-information {
+    margin: 1.2rem 1rem;
+  }
+  .header-icon-img {
+    display: none;
+  }
+}
